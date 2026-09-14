@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trail & Run | Entrenamiento</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR  -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-warning" href="../index.html">Trail & Run</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page"
+                            href="./galeria.html">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./carreras.html">Carreras</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./entrenamiento.html">Entrenamiento</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="py-5 text-center border-bottom border-secondary bg-black">
+        <div class="container my-4">
+            <h1 class="display-4 fw-bold text-warning">Desafía tus Límites en la Montaña</h1>
+            <p class="lead my-3 text-light">Planes de entrenamiento, calendario de carreras y la comunidad de trail
+                running más apasionada.</p>
+            <a href="pages/carreras.html" class="btn-custom my-2">Ver Próximas Carreras</a>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <!-- TÍTULO DE LA SECCIÓN -->
+        <section class="text-center mb-5">
+            <h1 class="display-5 fw-bold text-warning">Galería de Momentos</h1>
+            <p class="lead text-light">Reviví las mejorespostales de nuestras salidas, carreras y entrenamientos en la
+                montaña.</p>
+        </section>
+
+        <!-- BLOQUE 1: CAROUSEL DE BOOTSTRAP (REQUISITO OBLIGATORIO) -->
+        <section class="mb-5">
+            <div id="carouselTrail" class="carousel slide custom-carousel mx-auto shadow-lg rounded overflow-hidden"
+                data-bs-ride="carousel" style="max-width: 900px;">
+
+                <!-- Indicadores (puntos/rayitas inferiores) -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselTrail" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselTrail" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselTrail" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+
+                <!-- Imágenes del Carousel -->
+                <div class="carousel-inner">
+                    <!-- Item 1 -->
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <img src="../img/carrera1 (1).jpg" class="d-block w-100 img-fluid" alt="Carrera en las Sierras"
+                            style="height: 450px; object-fit: cover;">
+                        <div
+                            class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3 border border-secondary">
+                            <h5 class="text-warning fw-bold">Desafío Las Sierras</h5>
+                            <p class="mb-0">Superando desniveles y terrenos técnicos en la cumbre.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="../img/carrera2.jpg" class="d-block w-100 img-fluid" alt="Entrenamiento de Cuestas"
+                            style="height: 450px; object-fit: cover;">
+                        <div
+                            class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3 border border-secondary">
+                            <h5 class="text-warning fw-bold">Entrenamientos Grupales</h5>
+                            <p class="mb-0">Afrontando pasadas de cuesta y rodajes largos en equipo.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="../img/carrera3.jpg" class="d-block w-100 img-fluid" alt="Ultra Trail"
+                            style="height: 450px; object-fit: cover;">
+                        <div
+                            class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3 border border-secondary">
+                            <h5 class="text-warning fw-bold">Yungas Trail Fest</h5>
+                            <p class="mb-0">Inmersión total en senderos de selva y montaña.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controles para avanzar y retroceder -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselTrail"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselTrail"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- BLOQUE 2: GRILLA MASONRY / MOSAICO DE FOTOS -->
+        <section class="mt-5">
+            <h3 class="text-center text-warning mb-4">Postales del Team</h3>
+            <div class="row g-4">
+                <div class="col-md-4 col-sm-6">
+                    <div class="custom-card p-2 h-100">
+                        <img src="../img/trail1.jpg" class="img-fluid rounded w-100" alt="Trail Running 1"
+                            style="height: 220px; object-fit: cover;">
+                        <div class="p-2 text-center">
+                            <small class="text-secondary">Paisajes & Montaña</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="custom-card p-2 h-100">
+                        <img src="../img/trail2.jpg" class="img-fluid rounded w-100" alt="Trail Running 2"
+                            style="height: 220px; object-fit: cover;">
+                        <div class="p-2 text-center">
+                            <small class="text-secondary">Trabajo de Cuestas</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="custom-card p-2 h-100">
+                        <img src="../img/trail3.jpg" class="img-fluid rounded w-100" alt="Trail Running 3"
+                            style="height: 220px; object-fit: cover;">
+                        <div class="p-2 text-center">
+                            <small class="text-secondary">Llegada a Meta</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="custom-footer pt-4 pb-3">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-warning fw-bold">TRAIL & RUN</h5>
+                    <p class="small text-secondary">Pasión por el trail running y el entrenamiento consciente.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-warning fw-bold">Navegación</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html" class="footer-link small">Inicio</a></li>
+                        <li><a href="./carreras.html" class="footer-link small">Carreras</a></li>
+                        <li><a href="./entrenamiento.html" class="footer-link small">Entrenamiento</a></li>
+                        <li><a href="./galeria.html" class="footer-link small">Galería</a></li>
+                        <li><a href="./contacto.html" class="footer-link small">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-warning fw-bold">Redes</h5>
+                    <div class="d-flex gap-2 justify-content-center justify-content-md-start">
+                        <a href="#" class="btn btn-outline-warning btn-sm">Instagram</a>
+                        <a href="#" class="btn btn-outline-warning btn-sm">Strava</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <p class="text-center small text-secondary mb-0">&copy; 2026 Trail & Run - Centeno Ramiro.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

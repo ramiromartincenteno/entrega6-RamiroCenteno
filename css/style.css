@@ -1,0 +1,157 @@
+:root {
+    --bg-principal: #121212;      /* Fondo oscuro general */
+    --bg-card: #1e1e1e;           /* Fondo de contenedores y cards */
+    --bg-header: #181818;         /* Fondo del Hero/Header */
+    --color-texto: #e0e0e0;       /* Texto legible */
+    --color-primario: #ffc107;    /* Amarillo / Dorado Trail */
+    --color-hover: #e0a800;       /* Tono al hacer hover */
+    --fuente-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Base de la aplicación */
+body {
+    background-color: var(--bg-principal) !important;
+    color: var(--color-texto);
+    font-family: var(--fuente-principal);
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ============================================================
+   TIPOGRAFÍA Y ENCABEZADOS
+   ============================================================ */
+h1, .h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-primario);
+}
+
+h2, .h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-primario);
+}
+
+h3, .h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+p {
+    font-size: 1.05rem;
+    color: #cccccc;
+}
+
+/* ============================================================
+   NAVBAR Y NAVEGACIÓN
+   ============================================================ */
+.custom-navbar {
+    background-color: #1a1a1a !important;
+    border-bottom: 1px solid #333333;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.05rem;
+    color: #b0b0b0 !important;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Pseudoclases en el menú */
+.navbar-nav .nav-link:hover {
+    color: var(--color-primario) !important;
+    transform: translateY(-2px);
+}
+
+.navbar-nav .nav-link:active {
+    color: #ffffff !important;
+}
+
+/* ============================================================
+   BOTONES Y ELEMENTOS INTERACTIVOS
+   ============================================================ */
+.btn-custom {
+    background-color: var(--color-primario);
+    color: #000000;
+    font-weight: 700;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Pseudoclases en Botones */
+.btn-custom:hover {
+    background-color: var(--color-hover);
+    color: #000000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
+}
+
+.btn-custom:focus {
+    outline: 3px solid #ffffff;
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.8);
+}
+
+.btn-custom:active {
+    transform: translateY(0);
+    scale: 0.98;
+}
+
+/* ============================================================
+   CARDS Y TARJETAS
+   ============================================================ */
+.custom-card {
+    background-color: var(--bg-card);
+    border: 1px solid #333333;
+    border-radius: 8px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-primario);
+    box-shadow: 0 8px 20px rgba(255, 193, 7, 0.15);
+}
+
+/* ============================================================
+   FORMULARIO Y ENTRADAS (CONTACTO)
+   ============================================================ */
+.custom-input {
+    background-color: #262626 !important;
+    border: 1px solid #444444 !important;
+    color: #ffffff !important;
+}
+
+.custom-input:focus {
+    border-color: var(--color-primario) !important;
+    box-shadow: 0 0 8px rgba(255, 193, 7, 0.5) !important;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.custom-footer {
+    background-color: #0d0d0d;
+    border-top: 1px solid #333333;
+    margin-top: auto; /* Mantiene el footer abajo */
+}
+
+.footer-link {
+    color: #aaaaaa;
+    text-decoration: none;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer-link:hover {
+    color: var(--color-primario);
+    padding-left: 4px;
+}
