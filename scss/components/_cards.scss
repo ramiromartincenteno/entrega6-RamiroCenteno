@@ -1,0 +1,9 @@
+@use "../utilities/variables" as *;
+
+.custom-card {
+  background-color: $color-card-bg;
+  border: 1px solid $border-color-dark;
+  border-radius: $radius-custom;
+  color: $color-text-light;
+}
+

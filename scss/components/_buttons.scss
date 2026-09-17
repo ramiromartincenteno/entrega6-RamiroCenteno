@@ -1,0 +1,18 @@
+@use "../utilities/variables" as *;
+
+.btn-custom {
+  background-color: $color-primary;
+  color: $color-bg-dark;
+  font-weight: bold;
+  border: none;
+  border-radius: $radius-custom;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #e0a800;
+    color: $color-bg-dark;
+  }
+}

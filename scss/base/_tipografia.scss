@@ -1,0 +1,11 @@
+@use "../utilities/variables" as *;
+
+h1, h2, h3, h4, h5, h6 {
+  color: $color-text-light;
+  font-weight: 700;
+}
+
+.text-muted-custom {
+  color: $color-text-muted;
+}
+
