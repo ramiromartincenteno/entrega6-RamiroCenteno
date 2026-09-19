@@ -1,9 +1,16 @@
 @use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
 
 .custom-card {
   background-color: $color-card-bg;
   border: 1px solid $border-color-dark;
   border-radius: $radius-custom;
   color: $color-text-light;
-}
+  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+}

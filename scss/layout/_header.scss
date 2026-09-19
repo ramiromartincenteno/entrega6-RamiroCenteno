@@ -1,0 +1,11 @@
+@use "../utilities/variables" as *;
+
+.hero-section {
+  background-color: $color-bg-dark;
+  padding: 60px 0;
+  text-align: center;
+
+  h1 {
+    color: $color-primary;
+  }
+}

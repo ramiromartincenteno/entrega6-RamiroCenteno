@@ -1,6 +1,8 @@
 @use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
 
 .btn-custom {
+  @include flex-center(row, center, center, 0.5rem);
   background-color: $color-primary;
   color: $color-bg-dark;
   font-weight: bold;
@@ -8,11 +10,32 @@
   border-radius: $radius-custom;
   padding: 8px 16px;
   text-decoration: none;
-  display: inline-block;
   transition: all 0.3s ease;
 
   &:hover {
     background-color: #e0a800;
     color: $color-bg-dark;
+  }
+}
+
+
+.btn-base {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+.btn-primary {
+  @extend .btn-base; 
+  background-color: #3498db;
+  color: #ffffff;
+  
+
+  &:hover {
+    background-color: #2980b9;
   }
 }

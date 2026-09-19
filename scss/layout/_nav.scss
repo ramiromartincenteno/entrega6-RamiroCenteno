@@ -1,0 +1,14 @@
+@use "../utilities/variables" as *;
+
+.navbar {
+  background-color: $color-bg-dark;
+  border-bottom: 1px solid $border-color-dark;
+
+  .nav-link {
+    color: $color-text-light;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
