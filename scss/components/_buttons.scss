@@ -13,7 +13,7 @@
   transition: all 0.3s ease;
 
   &:hover {
-    background-color: #e0a800;
+    background-color: $color-primary-hover;
     color: $color-bg-dark;
   }
 }
@@ -31,11 +31,12 @@
 
 .btn-primary {
   @extend .btn-base; 
-  background-color: #3498db;
+  background-color: $color-btn-blue;
   color: #ffffff;
   
 
   &:hover {
-    background-color: #2980b9;
+    background-color: $color-btn-blue-hover;
   }
 }
+
