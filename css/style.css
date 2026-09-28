@@ -53,14 +53,6 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  background-color: #ffc107;
-  color: #000000;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;
-  padding: 8px 16px;
-  text-decoration: none;
-  transition: all 0.3s ease;
   display: inline-block;
   padding: 0.75rem 1.5rem;
   background-color: #ffc107;
@@ -73,10 +65,6 @@ h1, h2, h3, h4, h5, h6 {
 .btn-custom:hover {
   background-color: rgb(211, 158.25, 0);
   transform: translateY(-2px);
-  color: #000000;
-}
-.btn-custom:hover {
-  background-color: #e0a800;
   color: #000000;
 }
 

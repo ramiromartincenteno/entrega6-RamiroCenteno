@@ -4,22 +4,8 @@
 
 .btn-custom {
   @include flex-center(row, center, center, 0.5rem);
-  background-color: $color-primary;
-  color: $color-bg-dark;
-  font-weight: bold;
-  border: none;
-  border-radius: $radius-custom;
-  padding: 8px 16px;
-  text-decoration: none;
-  transition: all 0.3s ease;
   @include base-mixins.custom-button($color-primary, $color-bg-dark);
-
-  &:hover {
-    background-color: $color-primary-hover;
-    color: $color-bg-dark;
-  }
 }
-
 
 .btn-base {
   padding: 0.8rem 1.5rem;
