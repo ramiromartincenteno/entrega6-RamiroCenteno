@@ -1,0 +1,36 @@
+// Variables
+$primary-color: #0f172a;
+$secondary-color: #ffb703;
+$accent-color: #fb8500;
+$text-light: #f8fafc;
+$base-padding: 1rem;
+
+// Operador en SASS (cumple con el requisito de operadores)
+$large-padding: $base-padding * 2; 
+
+// Mixin para botones personalizados
+@mixin custom-button($bg-color, $text-color: #ffffff) {
+  display: inline-block;
+  padding: ($base-padding * 0.75) ($base-padding * 1.5); // Uso de operadores
+  background-color: $bg-color;
+  color: $text-color;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: darken($bg-color, 10%); // Función SASS
+    transform: translateY(-2px);
+    color: $text-color;
+  }
+}
+
+// Mixin para Media Queries (Responsive)
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == 'tablet' {
+    @media (min-width: 768px) { @content; }
+  } @else if $breakpoint == 'desktop' {
+    @media (min-width: 992px) { @content; }
+  }
+}

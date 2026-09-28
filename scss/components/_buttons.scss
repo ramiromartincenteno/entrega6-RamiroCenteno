@@ -1,3 +1,4 @@
+@use "../base/mixins" as base-mixins;
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
 
@@ -11,6 +12,7 @@
   padding: 8px 16px;
   text-decoration: none;
   transition: all 0.3s ease;
+  @include base-mixins.custom-button($color-primary, $color-bg-dark);
 
   &:hover {
     background-color: $color-primary-hover;
